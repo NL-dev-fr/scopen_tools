@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "creation": "2026-11-02 16:17:18.121764",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_tools",
+  "enable_alert_history"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_tools",
+   "fieldtype": "Column Break",
+   "label": "Outils"
+  },
+  {
+   "default": "1",
+   "description": "Pastille listant les toasts de la session (par onglet).",
+   "fieldname": "enable_alert_history",
+   "fieldtype": "Check",
+   "label": "Historique des notifications"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-11-02 16:18:39.802802",
+ "modified_by": "Administrator",
+ "module": "Scopen Tools",
+ "name": "Scopen Tools Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
