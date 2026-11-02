@@ -5,6 +5,8 @@ app_description = "Outils Scopen Frappe/ERPNext"
 app_email = "contact@scopen.fr"
 app_license = "mit"
 
+boot_session = "scopen_tools.boot.boot_session"
+
 # Apps
 # ------------------
 
@@ -47,6 +49,11 @@ app_license = "mit"
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
+
+
+app_include_js = ["scopen_alert_history.bundle.js"]
+app_include_css = ["scopen_alert_history.bundle.css"]
+
 
 # Svg Icons
 # ------------------
