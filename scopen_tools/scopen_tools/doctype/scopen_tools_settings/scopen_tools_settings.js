@@ -6,3 +6,11 @@
 
 // 	},
 // });
+
+frappe.ui.form.on("Scopen Tools Settings", {
+	setup(frm) {
+		frm.set_query("customization_module", () => ({
+			filters: { app_name: ["not in", ["frappe", "erpnext", "hrms", "scopen_tools"]] },
+		}));
+	},
+});

@@ -106,6 +106,8 @@ app_include_css = ["scopen_alert_history.bundle.css"]
 # before_app_install = "scopen_tools.utils.before_app_install"
 # after_app_install = "scopen_tools.utils.after_app_install"
 
+after_app_install = "scopen_tools.scopen_fixtures.engine.replay_app"
+
 # Integration Cleanup
 # -------------------
 # To clean up dependencies/integrations with other apps
@@ -157,6 +159,11 @@ app_include_css = ["scopen_alert_history.bundle.css"]
 # 		"on_trash": "method"
 # 	}
 # }
+
+doc_events = {
+	"Custom Field": {"before_insert": "scopen_tools.scopen_fixtures.engine.set_module"},
+	"Property Setter": {"before_insert": "scopen_tools.scopen_fixtures.engine.set_module"},
+}
 
 # Scheduled Tasks
 # ---------------

@@ -4,14 +4,16 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "outils_section",
   "section_tools",
-  "enable_alert_history"
+  "enable_alert_history",
+  "d\u00e9veloppement_section",
+  "customization_module"
  ],
  "fields": [
   {
    "fieldname": "section_tools",
-   "fieldtype": "Column Break",
-   "label": "Outils"
+   "fieldtype": "Column Break"
   },
   {
    "default": "1",
@@ -19,13 +21,29 @@
    "fieldname": "enable_alert_history",
    "fieldtype": "Check",
    "label": "Historique des notifications"
+  },
+  {
+   "fieldname": "outils_section",
+   "fieldtype": "Section Break",
+   "label": "Outils"
+  },
+  {
+   "fieldname": "d\u00e9veloppement_section",
+   "fieldtype": "Section Break",
+   "label": "D\u00e9veloppement"
+  },
+  {
+   "fieldname": "customization_module",
+   "fieldtype": "Link",
+   "label": "Module des personnalisations",
+   "options": "Module Def"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2026-11-02 16:18:39.802802",
+ "modified": "2026-11-18 17:47:18.987772",
  "modified_by": "Administrator",
  "module": "Scopen Tools",
  "name": "Scopen Tools Settings",
